@@ -68,7 +68,7 @@
         </ol>
 
         <div class="content">
-            <button class="btn btn-default mb-20">添加分类</button>
+            <button class="btn btn-default mb-20 addBtn">添加分类</button>
 
             <table class="table table-bordered table-hover">
                 <thead>
@@ -111,6 +111,29 @@
                 <button type="button" class="btn btn-primary" id="logoutBtn">退出</button>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="addModal">
+    <!--模态框-->
+    <div class="modal-dialog modal-sm">
+        <form id="form">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4 class="modal-title">添加分类</h4>
+                </div>
+                <div class="modal-body red">
+                        <div class="form-group">
+                            <input type="text" class="form-control"  placeholder="请输入一级分类" name="categoryName">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-primary" >添加</button>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 
